@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page</title>
+        <link rel="stylesheet" href="cwk.css">
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            body {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <ul class="standardnav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="map.html">Map Room</a></li>
+                <li><a href="gallery.html">Gallary</a></li>
+
+            </ul>
+        </header>
+
+        <main>
+
+
+            <section class="slideshow" id="slideshow">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/General/logo.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <a href="about.html">
+                        <img src="images/General/about.png" style="width:100%">
+                    </a>
+
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <a href="map.html">
+                        <img src="images/General/map.png" style="width:100%">
+                    </a>
+
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <a href="gallery.html">
+                        <img src="images/General/gallery.png" style="width:100%">
+                    </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </section>
+
+            <section class="feature" id="featuretitle">
+                <img src="images/General/ourfeatures.png" style="width: 100%;">
+            </section>
+
+            <section class="feature" id="feature1">
+                <a href="akoko.html">
+                    <img src="images/featureforhome/2.png" style="width: 100%;">
+                </a>
+            </section>
+
+            <section class="feature" id="feature2">
+                <a href="akub.html">
+                    <img src="images/featureforhome/1.png" style="width: 100%;">
+                </a>
+            </section>
+
+
+            <button onclick="backToTop('slideshow')" id="toTop" title="Back to top"> 🔝</button>
+            <img id="scrolldown" src="images/General/scrolldown.png">
+
+        </main>
+
+    </body>
+</html>
